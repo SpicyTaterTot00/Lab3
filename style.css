@@ -1,0 +1,14 @@
+body{
+  background-color: rgb(131, 68, 120);
+}
+
+h1{
+  color: aquamarine;
+  text-align: center;
+  
+}
+
+P{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 26px;
+}
