@@ -10,10 +10,11 @@
   
   
   Home</a> </li>
-      <li><a href= "lab1.html">Lab 1</a> </li>
-      <li><a href= "lab2.html">Lab 2</a> </li>
-      <li><a href= "lab3.html">Lab 3</a> </li>
-      <li><a href= "lab4.html">Lab 4</a> </li></aside>
+      <li><a href= "lab1.html">Lab1</a> </li>
+      <li><a href= "lab2.html">Lab2</a> </li>
+      <li><a href= "lab3.html">Lab3</a> </li>
+      <li><a href= "lab4.html">Lab4</a> </li>
+      <li><a href= "lab5.html">Lab5</a> </li></aside>
   </section>    
   <article class="content">
     <h1>Tomato Bacon Grilled Cheese</h1>
@@ -39,7 +40,18 @@
     </p>
     </section>
   </article>
-  <footer class="footer">For more visit weirdrecipes.org</footer>
+  <footer class="footer">For more visit weirdrecipes.org<br>
+
+    <script> 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    document.write("Last Updated:"," ", today);
+    </script>
+  </footer>
 </div>
     
   

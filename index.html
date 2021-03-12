@@ -6,16 +6,32 @@
   <div class="wrapper">
   <header class="header"><img src= https://live.staticflickr.com/3149/2471138966_44fe5cb7f4_b.jpg ></header>
     <title>CPSC 2125 Portfolio</title>
+    <html>
+    <head>
+        
+    
    
   <aside class="sidebar">
       <li><a href= "index.html">Home</a> </li>
       <li><a href= "lab1.html">Lab1</a> </li>
       <li><a href= "lab2.html">Lab2</a> </li>
       <li><a href= "lab3.html">Lab3</a> </li>
-      <li><a href= "lab4.html">Lab4</a> </li></aside>
+      <li><a href= "lab4.html">Lab4</a> </li>
+      <li><a href= "lab5.html">Lab5</a> </li></aside>
     <article class="content">
     <h1>CPSC 2125 Portfolio</h1>
   </article>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <script> 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    document.write("Last Updated:"," ", today);
+    </script>
+
+  </footer>
 </div>
     

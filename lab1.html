@@ -4,17 +4,39 @@
 
   <head>
   <div class="wrapper">
-  <header class="header"><img src= https://live.staticflickr.com/3149/2471138966_44fe5cb7f4_b.jpg ></header>
+  <header class="header"><img src="https://www.funnycatsite.com/pictures/Burrito_Cat.jpg" ></header>
     <title>CPSC 2125 Lab 1</title>
-   
+  
+       <h1>Welcome to my Lab 1!</h1>
+       <h2>This is Burrito Cat</h2>
+    
+        
+
   <aside class="sidebar">
       <li><a href= "index.html">Home</a> </li>
       <li><a href= "lab1.html">Lab1</a> </li>
       <li><a href= "lab2.html">Lab2</a> </li>
       <li><a href= "lab3.html">Lab3</a> </li>
-      <li><a href= "lab4.html">Lab4</a> </li></aside>
+      <li><a href= "lab4.html">Lab4</a> </li>
+      <li><a href= "lab5.html">Lab5</a> </li></aside>
     <article class="content">
-    <h1>CPSC 2125 Lab 1</h1>
+
+  <p>Burrito Cat has decided it is too cold to leave his tortilla today.</p>
+      
+
+   
   </article>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <script> 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    document.write("Last Updated:"," ", today);
+    </script>
+
+
+  </footer>
 </div>
