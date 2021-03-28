@@ -1,0 +1,141 @@
+body {
+  margin: 40px;
+  background-color: darkgray
+}
+
+.aside {
+    grid-area: aside;
+  }
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .section {
+    grid-area: section;
+  }
+
+  .article {
+    grid-area: article;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .wrapper {
+    background-color: darkgray;
+    color: #444;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "nav"
+     "aside"
+     "section"
+     "article"
+     "footer"
+  }
+
+  @media only screen and (min-width: 500px)  {
+  .wrapper {
+
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    "header  header  header"
+    "nav nav nav"
+    "section  section aside"
+    "article article aside"
+    "footer footer  footer";
+  }
+  }
+
+  @media only screen and (min-width: 600px)   {
+    .wrapper {
+      grid-gap: 20px;
+      grid-template-columns: 120px auto 120px;
+      grid-template-areas:
+      "header  header header header"
+      "nav nav nav nav"
+      "section  section aside aside"
+      "article article aside aside"
+      "footer footer footer footer";
+      
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+.box {
+  background-color:darkgray;
+  color:black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+.header{
+  background-color: lavender;
+  color: darkorchid;
+  text-align: center;
+  font: 5em sans-serif;
+  
+}
+
+.footer {
+  background-color: rgba(152, 251, 152, 0.432);
+  color: darkgreen;
+  text-align: center;
+  font: 1em sans-serif;
+}
+
+.nav {
+  background-color: lightcoral;
+  color: pink;
+  text-align: center;
+  font: 2em sans-serif;
+}
+
+.aside {
+  background-color: lightgoldenrodyellow;
+  color: orange;
+  text-align: center;
+  font: 2em sans-serif;
+}
+
+.section {
+  background-color:paleturquoise;
+  color: darkblue;
+  text-align: center;
+  font: 2em sans-serif;
+}
+
+.article {
+  background-color:plum;
+  color: purple;
+  text-align: center;
+  font: 2em sans-serif;
+}
+
+ul#horizontal-list li {
+		display: inline;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid gray;  
+    background-color: lavenderblush; 
+	}
+
+
+  a {
+    color:gray;
+    text-decoration:none; 
+    font-weight:bold}
+    a:hover {color:plum;}
+  
